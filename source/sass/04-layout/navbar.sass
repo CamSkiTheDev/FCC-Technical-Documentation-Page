@@ -1,0 +1,42 @@
+body
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    #navbar
+        height: 100%
+        border-right: $hot_pink solid 2px
+        header
+            padding: 10px 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-bottom: $hot_pink solid 2px
+            font-family: 'Lobster'
+            font-weight: bold
+            font-size: 26px
+        ul
+            margin: 0
+            padding: 0
+            width: 100%
+            list-style: none
+            a
+                margin: 0
+                padding: 0
+                width: 100%
+                display: flex
+                align-items: center
+                text-decoration: none
+                color: #000000
+                font-family: 'Roboto'
+                li
+                    transition: all 500ms
+                    margin: 0px
+                    padding: 15px 10px
+                    width: 100%
+                    border-bottom: $hot_pink 2px solid
+                    &:hover
+                        background: $hot_pink
+                        color: #fff
+
+@media  (max-width: 1px)
+    #navbar
+        position: relative
